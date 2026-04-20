@@ -1,5 +1,4 @@
 # About Notify
-
 Notify is designed to standardize notification delivery across government systems.
 
 ---
