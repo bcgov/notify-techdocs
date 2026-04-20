@@ -1,38 +1,69 @@
 # Notify Service
 
-Notify is a centralized, scalable notification platform designed to send communications across multiple channels including Email, SMS, and third-party integrations.
+Notify is the Government of BC’s enterprise notification service designed to send reliable, scalable, and consistent communications across multiple delivery channels such as Email, SMS, and third-party messaging systems.
 
-## Overview
+With GC Notify being sunsetted, Notify provides a centralized platform for managing notifications across government systems.
 
-The service supports both simple notifications and event-driven messaging using templates. It is designed for flexibility, scalability, and ease of integration across government systems.
+---
+
+## What Notify Does
+
+Notify allows systems to:
+- Send notifications via API
+- Trigger event-driven communications
+- Use reusable templates
+- Track delivery status
+- Integrate with external systems
+
+---
 
 ## Key Features
 
-- Multi-channel delivery (Email, SMS, 3rd Party)
-- Template-based notifications
-- Event-driven architecture
-- Layered defaults (Global → Tenant → Template → Request)
+- Multi-channel delivery (Email, SMS, Third-party)
+- Template-based messaging
+- Event-driven notifications
+- Layered configuration system
 - Callback and subscription support
-- Notification tracking and status monitoring
-- Attachment support
-- Preview capability before sending
+- Notification tracking
+- Preview before sending
+- Attachment handling
 
-## Core Concepts
+---
 
-### Multi-Tenancy
-Each tenant operates independently with its own:
+## Core Design Principles
+
+### 1. Multi-Tenancy
+Each tenant operates independently with isolated:
 - Templates
-- Configuration
-- Notification settings
+- Configurations
+- Notification data
 
-### Layered Defaults
-Configuration is applied in the following order:
+---
+
+### 2. Layered Defaults
+
+Configuration is applied in the following hierarchy:
+
 1. Global Defaults  
 2. Tenant Defaults  
 3. Template Defaults  
 4. Request Overrides  
 
-### Idempotency
-Each request can include a unique key to prevent duplicate notifications.
+This ensures flexibility while maintaining consistency.
+
+---
+
+### 3. Idempotency
+
+Each notification request can include an idempotency key to prevent duplicate processing.
+
+---
+
+### 4. Asynchronous Processing
+
+All notifications are processed asynchronously to ensure:
+- Scalability
+- Reliability
+- Fault tolerance
 
 ---
