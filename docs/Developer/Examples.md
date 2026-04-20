@@ -32,8 +32,4 @@
   }
 }
 ```
-flowchart LR
-A[Event] --> B[Defaults]
-B --> C[Template]
-C --> D[Queue]
-D --> E[Delivery]
+
