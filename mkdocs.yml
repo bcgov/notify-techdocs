@@ -1,0 +1,34 @@
+site_name: Notify Service
+site_description: Multi-channel notification platform (Email, SMS, Third-party)
+repo_url: https://github.com/<your-org>/<your-repo>
+
+plugins:
+  - techdocs-core
+
+nav:
+  - Home: index.md
+
+  - About:
+      - Overview: About/Overview.md
+      - Design Principles: About/Design-Principles.md
+      - Multi-Tenancy: About/Multi-Tenancy.md
+      - Roadmap: About/Roadmap.md
+
+  - Capabilities:
+      - Functionalities: Capabilities/Functionalities.md
+      - Integrations: Capabilities/Integrations.md
+      - Notification Management: Capabilities/Notification-Management.md
+      - Architecture: Capabilities/Architecture.md
+      - Accessibility: Capabilities/Accessibility.md
+
+  - Components:
+      - Architecture: Components/Architecture.md
+      - Data Model: Components/Data-Model.md
+
+  - Developer:
+      - Getting Started: Developer/Getting-Started.md
+      - API Guide: Developer/API-Guide.md
+      - Examples: Developer/Examples.md
+      - Callbacks: Developer/Callbacks.md
+      - Subscriptions: Developer/Subscriptions.md
+      - Attachments: Developer/Attachments.md
