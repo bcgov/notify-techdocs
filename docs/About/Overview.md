@@ -1,15 +1,30 @@
 # About Notify
 
-Notify is built to standardize and simplify how notifications are sent across systems.
+Notify is designed to standardize notification delivery across government systems.
 
-It enables teams to:
-- Avoid duplicated notification logic
-- Centralize communication handling
-- Ensure consistency across channels
+---
 
-## Goals
+## Why Notify Exists
 
-- Provide a single notification service
-- Enable event-driven communication
-- Improve scalability and reliability
-- Support extensibility for future channels
+Before Notify:
+- Each system implemented its own notification logic
+- Inconsistent delivery mechanisms
+- Difficult to maintain and scale
+
+---
+
+## What Notify Solves
+
+- Centralized notification service
+- Consistent API interface
+- Reusable templates
+- Scalable architecture
+
+---
+
+## Design Goals
+
+- Simplicity for developers
+- High availability
+- Extensibility for future channels
+- Compliance with government standards
