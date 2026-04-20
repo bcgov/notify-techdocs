@@ -1,21 +1,21 @@
 # Getting Started
 
-## Base URL
+## Send Notification
 
-/api/v1
-
----
-
-## Authentication
-
-Use API keys associated with tenants.
-
----
-
-## First Request
+POST /notifyevent
 
 ```json
 {
-  "to": "user@email.com",
-  "message": "Hello World"
+  "notificationEventType": "funding-approved",
+  "params": {
+    "firstname": "John"
+  }
 }
+```
+
+## What Happens
+* Event received
+* Defaults resolved
+* Notification created
+* Queued in Redis
+* Worker delivers
